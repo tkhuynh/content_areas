@@ -111,7 +111,7 @@
                 <div class="form-group">
                   <label class="control-label" for="contactEmail_{{@../index}}_{{@index}}">Email</label>
                   <input type="email" data-error="Please enter valid email address"
-                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,3}$" onChange="appTextChange(this)"
+                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,3}$" onChange="updateContactInfo(this, {{@index}}, {{@../index}})"
                     class="form-control" value="{{contactEmail}}" id="contactEmail_{{@../index}}_{{@index}}" name="contactEmail" placeholder="Enter email address"
                     required>
                   <div class="help-block with-errors"></div>
@@ -121,7 +121,7 @@
               <div class="col-sm-4">
                 <div class="form-group">
                   <label for="contactPhone_{{@../index}}_{{@index}}">Phone Number</label>
-                  <input type="text" onChange="appTextChange(this)" class="form-control" value="{{contactPhoneNumber}}" id="contactPhone_{{@../index}}_{{@index}}"
+                  <input type="text" onChange="updateContactInfo(this, {{@index}}, {{@../index}})" class="form-control" value="{{contactPhoneNumber}}" id="contactPhone_{{@../index}}_{{@index}}"
                     name="contactPhoneNumber" placeholder="(###) ###-####" required>
                   <div class="help-block with-errors"></div>
                 </div>
@@ -130,7 +130,7 @@
               <div class="col-sm-4">
                 <div class="form-group">
                   <label for="contactText_{{@../index}}_{{@index}}">Text</label>
-                  <input type="text" onChange="appTextChange(this)" class="form-control" value="{{contactText}}" id="contactText_{{@../index}}_{{@index}}"
+                  <input type="text" onChange="updateContactInfo(this, {{@index}}, {{@../index}})" class="form-control" value="{{contactText}}" id="contactText_{{@../index}}_{{@index}}"
                     name="contactText" placeholder="(###) ###-####">
                 </div>
               </div>
