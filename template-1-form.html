@@ -81,6 +81,18 @@
       <h3>Customer Contact Information</h3>
       {{#each contacts}}
         <p>{{firstName}}</p>
+        <div class="panel panel-default panelAccount" id="contact_panel_{{@../index}}_{{@index}}">
+          <div class="panel-heading" onClick="accordian({{@index}})">
+            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+            <!-- <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> -->
+            <span id="contactDisplay_{{@index}}">{{firstName}} {{lastName}}</span>
+            <button type="button" class="btn btn-default pull-right trashCan" style="margin-top: -7px; margin-right: -12px;"
+              onclick="data.panelSel={{@index}}; $('#DeleteConfirm').modal({show:true})"><span
+                class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+          </div>
+          <div class="panel-body">
+          </div>
+        </div>
       {{/each}}
       <h2>Customer Service Account Information</h2>
       <div class="panel panel-default panelAccount" id="panel_{{@index}}">
