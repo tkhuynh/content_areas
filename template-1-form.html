@@ -148,7 +148,7 @@
           </div>
         </div>
 
-        {{#if ../type == 'ELRP'}}
+        {{#ifEquals ../type "ELRP"}}
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
@@ -163,7 +163,7 @@
             </div>
           </div>
         </div>
-        {{/if}}
+        {{/ifEquals}}
 
 
         {{#if ../showResourceInfo}}
