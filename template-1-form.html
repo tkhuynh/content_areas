@@ -83,14 +83,29 @@
         <p>{{firstName}}</p>
         <div class="panel panel-default panelAccount" id="contact_panel_{{@../index}}_{{@index}}">
           <div class="panel-heading" onClick="accordian({{@index}})">
-            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-            <!-- <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> -->
-            <span id="contactDisplay_{{@index}}">{{firstName}} {{lastName}}</span>
             <button type="button" class="btn btn-default pull-right trashCan" style="margin-top: -7px; margin-right: -12px;"
               onclick="data.panelSel={{@index}}; $('#DeleteConfirm').modal({show:true})"><span
                 class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
           </div>
           <div class="panel-body">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="contactFirstName_{{@../index}}_{{@index}}">First Name</label>
+                  <input type="text" pattern="^[a-zA-Z0-9].*" onChange="appTextChange(this)" class="form-control"
+                    value="{{firstName}}" id="contactFirstName_{{@../index}}_{{@index}}" name="firstName" placeholder="Enter first name" required>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="contactLastName_{{@../index}}_{{@index}}">Last Name</label>
+                  <input type="text" pattern="^[a-zA-Z0-9].*" onChange="appTextChange(this)" class="form-control"
+                    value="{{lastName}}" id="lastName" name="contactLastName_{{@../index}}_{{@index}}" placeholder="Enter last name" required>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       {{/each}}
