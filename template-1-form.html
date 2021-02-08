@@ -81,6 +81,7 @@
       <h3>Customer Contact Information</h3>
       {{#each contacts}}
         <div class="panel panel-default panelContact" id="contact_panel_{{@../index}}_{{@index}}">
+          <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
           <div class="panel-heading" onClick="accordian({{@index}})">
             <button type="button" class="btn btn-default pull-right trashCan" style="margin-top: -7px; margin-right: -12px;"
               onclick="data.panelSel={{@index}}; $('#DeleteConfirm').modal({show:true})"><span
