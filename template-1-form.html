@@ -77,18 +77,17 @@
 
   <!--Panels-->
   <div class="container" id="ServiceDiv">
-    <h2>Customer Service Account Information</h2>
     {{#each accounts}}
+    <h2>Customer Service Account Information</h2>
     <div class="panel panel-default panelAccount" id="panel_{{@index}}">
-
       <div class="panel-heading" onClick="accordian({{@index}})">
-        <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        <!-- <span class="glyphicon glyphicon-minus" aria-hidden="true"></span> -->
+        <!-- <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> -->
         <span id="customerDisplay_{{@index}}">{{customerName}}</span>
         <span class="badge" id="accountDisplay_{{@index}}">{{accountNumber}}</span>
-        <button type="button" class="btn btn-default pull-right trashCan" style="margin-top: -7px; margin-right: -12px;"
+        <!-- <button type="button" class="btn btn-default pull-right trashCan" style="margin-top: -7px; margin-right: -12px;"
           onclick="data.panelSel={{@index}}; $('#DeleteConfirm').modal({show:true})"><span
-            class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+            class="glyphicon glyphicon-trash" aria-hidden="true"></span></button> -->
       </div>
 
       <div class="panel-body">
