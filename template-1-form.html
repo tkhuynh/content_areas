@@ -78,10 +78,10 @@
   <!--Panels-->
   <div class="container" id="ServiceDiv">
     {{#each accounts}}
-      <div id="contactInfoSection_{{@index}}">
+      <div id="accountSection_{{@index}}">
         <h3>Customer Contact Information</h3>
         {{#each contacts}}
-          <div class="panel panel-default panelContact" id="contact_panel_{{@../index}}_{{@index}}">
+          <div class="panel panel-default panelContact" id="accountContactSection_{{@../index}}_{{@index}}">
             <div class="panel-heading" onClick="accordian({{@index}})">
               <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
               <button type="button" class="btn btn-default pull-right contactTrashCan" style="margin-top: -7px; margin-right: -12px;"
@@ -343,7 +343,7 @@
 
                 </div>
               </div>
-              {{/if}}
+            {{/if}}
           </div>
         </div>
       </div>
