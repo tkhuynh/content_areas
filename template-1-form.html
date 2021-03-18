@@ -221,12 +221,12 @@
               <div class="col-sm-12">
                 <div class="form-group">
                   <label for="mwNomination_{{@index}}">MW Nomination</label>
-                  <input style="width:75px; display: inline-block;"
+                  <input style="width:100px; display: inline-block;"
                     type="text" class="form-control mwNomination" id="mwNomination_{{@index}}"
                     name="mwNomination_{{@index}}" placeholder="#" value="{{mwNomination}}"
                     onchange="updateAccount(this,{{@index}})" required>
                   <button id="prohibitedResourceKwQMark_{{@index}}" type="button" class="btn btn-default btn-xs"
-                    data-toggle="modal" data-target="#ProhibitedResource2">?</button>
+                    data-toggle="modal" data-target="#mwNominationModal">?</button>
                   <div class="help-block with-errors"></div>
                 </div>
               </div>
