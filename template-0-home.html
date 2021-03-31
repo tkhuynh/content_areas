@@ -6,8 +6,14 @@
      <img src="https://image.email.sce.com/lib/fe9212727166057573/m/1/SCE_LP_Jumbo.jpg" width="100%" alt="REDUCE ENERGY DURING PEAK DEMAND AND EARN BILL CREDITS." style="border-top: solid 10px #595959;">
        
       <div class="callout callout-info">
-        <b>Having trouble filling out this form?</b> Contact SCE at <a href="mailto:drp@sce.com">drp@sce.com</a> or call (866) 334-7827 for assistance.
-            </div>
+        <b>Having trouble filling out this form?</b>Contact SCE at
+        {{#if ../elrp}}
+          <a href="mailto:elrp@sce.com">elrp@sce.com</a>
+        {{else}}
+          <a href="mailto:drp@sce.com">drp@sce.com</a>
+        {{/if}}
+        or call (866) 334-7827 for assistance.
+      </div>
     </div>
   </div>
 </div>
