@@ -12,8 +12,13 @@
           <li class="disabled"><a title="Confirmation">Confirmation</a></li>
         </ul>
         <div class="callout callout-info">
-          <b>Having trouble filling out this form?</b> Contact SCE at <a href="mailto:drp@sce.com">drp@sce.com</a> or
-          call (866) 334-7827 for assistance.
+          <b>Having trouble filling out this form?</b> Contact SCE at
+          {{#if ../elrp}}
+            <a href="mailto:elrp@sce.com">elrp@sce.com</a>
+          {{else}}
+            <a href="mailto:drp@sce.com">drp@sce.com</a>
+          {{/if}}
+          or call (866) 334-7827 for assistance.
         </div>
       </div>
     </div>
