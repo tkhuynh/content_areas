@@ -29,16 +29,6 @@
     <input type="hidden" id="hdnDeleteElement" />
     <h2>Customer Authorized Representative</h2>
     <div class="row">
-      <div class="col-sm-12">
-        <div class="form-group">
-          <input type="checkbox" id="firstContact">
-          <h4>
-            <label for="firstContact">Contact Information Same as Representative</label>
-          </h4>
-        </div>
-      </div>
-    </div>
-    <div class="row">
       <div class="col-sm-6">
         <div class="form-group">
           <label class="control-label" for="firstName">First Name</label>
@@ -95,6 +85,16 @@
     {{#each accounts}}
       <div id="accountSection_{{@index}}">
         <h3>Customer Contact Information</h3>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <h4>
+                <input type="checkbox" id="firstContact">
+                <label for="firstContact">Contact Information Same as Representative</label>
+              </h4>
+            </div>
+          </div>
+        </div>
         {{#each contacts}}
           <div class="panel panel-default panelContact" id="accountContactSection_{{@../index}}_{{@index}}">
             <div class="panel-heading" onClick="accordian({{@index}})">
