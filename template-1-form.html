@@ -29,11 +29,21 @@
     <input type="hidden" id="hdnDeleteElement" />
     <h2>Customer Authorized Representative</h2>
     <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <input type="checkbox" id="firstContact">
+          <h4>
+            <label for="firstContact">Contact Information Same as Representative</label>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-sm-6">
         <div class="form-group">
           <label class="control-label" for="firstName">First Name</label>
           <input type="text" pattern="^[a-zA-Z0-9].*" onChange="appTextChange(this)" class="form-control"
-            value="{{app.firstName}}" id="firstName" name="firstName" placeholder="Enter first name" required>
+            value="{{app.firstName}}" id="firstName" name="firstName" placeholder="Enter First Name" required>
           <div class="help-block with-errors"></div>
         </div>
       </div>
@@ -41,7 +51,7 @@
         <div class="form-group">
           <label class="control-label" for="lastName">Last Name</label>
           <input type="text" pattern="^[a-zA-Z0-9].*" onChange="appTextChange(this)" class="form-control"
-            value="{{app.lastName}}" id="lastName" name="lastName" placeholder="Enter last name" required>
+            value="{{app.lastName}}" id="lastName" name="lastName" placeholder="Enter Last Name" required>
           <div class="help-block with-errors"></div>
         </div>
       </div>
@@ -99,7 +109,7 @@
                   <div class="form-group">
                     <label class="control-label" for="contactFirstName_{{@../index}}_{{@index}}">First Name</label>
                     <input type="text" pattern="^[a-zA-Z0-9].*" onChange="updateContactInfo(this, {{@index}}, {{@../index}})" class="form-control"
-                      value="{{firstName}}" id="contactFirstName_{{@../index}}_{{@index}}" name="firstName" placeholder="Enter first name" required>
+                      value="{{firstName}}" id="contactFirstName_{{@../index}}_{{@index}}" name="firstName" placeholder="Enter First Name" required>
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
@@ -107,7 +117,7 @@
                   <div class="form-group">
                     <label class="control-label" for="contactLastName_{{@../index}}_{{@index}}">Last Name</label>
                     <input type="text" pattern="^[a-zA-Z0-9].*" onChange="updateContactInfo(this, {{@index}}, {{@../index}})" class="form-control"
-                      value="{{lastName}}" id="contactLastName_{{@../index}}_{{@index}}" name="lastName" placeholder="Enter last name" required>
+                      value="{{lastName}}" id="contactLastName_{{@../index}}_{{@index}}" name="lastName" placeholder="Enter Last Name" required>
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
