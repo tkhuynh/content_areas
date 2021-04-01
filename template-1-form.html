@@ -96,6 +96,15 @@
           </div>
         </div>
         {{#each contacts}}
+          {{#if @index == 1}}
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <h3>Additional Contacts</h3>
+              </div>
+            </div>
+          </div>
+          {{/if}}
           <div class="panel panel-default panelContact" id="accountContactSection_{{@../index}}_{{@index}}">
             <div class="panel-heading" onClick="accordian({{@index}})">
               <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
