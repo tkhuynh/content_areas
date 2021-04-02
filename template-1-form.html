@@ -84,6 +84,7 @@
   <div class="container" id="ServiceDiv">
     {{#each accounts}}
       <div id="accountSection_{{@index}}">
+        {{#if ../elrp}}
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <h3>Customer Contact Information</h3>
@@ -97,6 +98,7 @@
             </div>
           </div>
         </div>
+        {{/if}}
         {{#each contacts}}
           {{#if showText}}
           <div class="row">
@@ -166,6 +168,7 @@
             </div>
           </div>
         {{/each}}
+        {{#if ../elrp}}
         <div class="row">
           <div class="col-xs-12 pull-right">
             <button type="button" class="btn btn-primary btn-lg pull-right addContactBtn" onclick="addCustomerContact({{@index}})">
@@ -173,6 +176,7 @@
             </button>
           </div>
         </div>
+        {{/if}}
         <h2>Customer Service Account Information</h2>
         <div class="panel panel-default panelAccount" id="panel_{{@index}}">
           <div class="panel-heading" onClick="accordian({{@index}})">
