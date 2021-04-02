@@ -112,7 +112,7 @@
           <div class="panel panel-default panelContact" id="accountContactSection_{{@../index}}_{{@index}}">
             <div class="panel-heading" onClick="accordian({{@index}})">
               <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-              <button type="button" class="btn btn-default pull-right contactTrashCan" style="margin-top: -7px; margin-right: -12px;"
+              <button type="button" aria-label="Delete Contact {{@index + 1}}" class="btn btn-default pull-right contactTrashCan" style="margin-top: -7px; margin-right: -12px;"
                 onclick="data.customerContactIndex='{{@../index}}_{{@index}}'; $('#DeleteCustomerContactConfirm').modal({show:true})"><span
                   class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
             </div>
